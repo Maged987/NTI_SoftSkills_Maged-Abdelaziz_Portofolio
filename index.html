@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maged Abdelaziz - Frontend Developer and Engineering Student specialized in building responsive and modern web applications.">
+  <meta name="keywords" content="portfolio, web developer, full stack, frontend, backend, JavaScript">
+  <meta name="author" content="Maged Abdelaziz">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Maged Abdelaziz | Frontend Developer Portfolio">
+  <meta property="og:description" content="Professional portfolio showcasing web development projects and skills.">
+  <meta property="og:type" content="website">
+  <title>Maged Abdelaziz | Frontend Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__logo">JD</div>
+      <div class="preloader__bar"><span></span></div>
+      <p class="preloader__text">Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Animated Background -->
+  <div class="bg-animation" aria-hidden="true">
+    <span class="bg-blob bg-blob--1"></span>
+    <span class="bg-blob bg-blob--2"></span>
+    <span class="bg-blob bg-blob--3"></span>
+    <span class="bg-grid"></span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav__logo" aria-label="Home">
+        <span class="nav__logo-text">JD</span>
+        <span class="nav__logo-glow"></span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#education" class="nav__link">Education</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#feedback" class="nav__link">Feedback</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <button class="nav__close" id="nav-close" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon theme-toggle__icon"></i>
+        </button>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section class="home section" id="home">
+      <div class="container home__container">
+        <div class="home__content reveal">
+          <p class="home__greeting">Hello, I'm</p>
+          <h1 class="home__name">Maged Abdelaziz</h1>
+          <h2 class="home__profession">
+            <span class="typing-text" id="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </h2>
+          <p class="home__intro">
+            I’m Maged Abdelaziz, a Frontend Developer and Engineering student passionate about building modern, responsive, and interactive web applications. I enjoy turning ideas into real digital experiences using clean code and creative design.
+          </p>
+          <div class="home__cta">
+            <a href="#contact" class="btn btn--primary">
+              <span>Hire Me</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#" class="btn btn--outline" download>
+              <span>Download CV</span>
+              <i class="fas fa-download"></i>
+            </a>
+          </div>
+          <div class="home__social">
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+        <div class="home__image-wrapper reveal reveal--delay">
+          <div class="home__image-glow"></div>
+          <div class="home__image">
+            <!-- PERSONAL IMAGE HERE -->
+            <div class="image-placeholder">
+              <img src="me.jpeg" alt="">
+              <!-- <i class="fas fa-user"></i>
+              <span>Your Photo</span> -->
+            </div>
+          </div>
+          <div class="home__badge home__badge--1 floating">
+            <i class="fas fa-code"></i>
+            <span>2+ Years Learning & Building</span>
+          </div>
+          <div class="home__badge home__badge--2 floating floating--delay">
+            <i class="fas fa-rocket"></i>
+            <span>15+ Projects Completed</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="home__scroll" aria-label="Scroll to about">
+        <span>Scroll Down</span>
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__subtitle">Get To Know</span>
+          <h2 class="section__title">About Me</h2>
+        </header>
+
+        <div class="about__stats reveal">
+          <article class="stat-card">
+            <span class="stat-card__number" data-count="5">0</span>
+            <span class="stat-card__label">Years Experience</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-card__number" data-count="15">0</span>
+            <span class="stat-card__label">Projects</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-card__number" data-count="30">0</span>
+            <span class="stat-card__label">Clients</span>
+          </article>
+          <article class="stat-card stat-card--status">
+            <span class="status-dot"></span>
+            <span class="stat-card__label">Available for Work</span>
+          </article>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__content reveal">
+            <p class="about__text">
+              I’m a Computer and Systems Engineering student with a strong passion for frontend development and modern web technologies. I focus on creating responsive and user-friendly interfaces while continuously improving my problem-solving and programming skills.
+            </p>
+            <div class="about__cards">
+              <article class="about-card">
+                <div class="about-card__icon"><i class="fas fa-heart"></i></div>
+                <h3>Passion</h3>
+                <p>Passionate about web development, UI design, and building real-world projects that combine creativity with functionality.</p>
+              </article>
+              <article class="about-card">
+                <div class="about-card__icon"><i class="fas fa-layer-group"></i></div>
+                <h3>Specializations</h3>
+                <p>Frontend Development, Responsive Design, JavaScript Applications, and Interactive User Interfaces.</p>
+              </article>
+              <article class="about-card">
+                <div class="about-card__icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Goals</h3>
+                <p>My goal is to become a professional software engineer and build impactful digital products that solve real problems.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__subtitle">My Journey</span>
+          <h2 class="section__title">Education</h2>
+        </header>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content card-glass">
+              <span class="timeline__year">2022 - 2027</span>
+              <h3 class="timeline__title">Zagazig University</h3>
+              <p class="timeline__role">Computer and Systems Engineering</p>
+              <p class="timeline__desc">Focused on programming, control systems, electronics, and software development.</p>
+              <ul class="timeline__courses">
+                <li>Logic Circuits</li>
+                <li>Database Systems</li>
+                <li>Control Systems</li>
+                <li>Digital Electronics</li>
+                <li>Web Development</li>
+              </ul>
+            </div>
+          </article>
+          <!-- <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content card-glass">
+              <span class="timeline__year">2022 - 2023</span>
+              <h3 class="timeline__title">Tech Academy Institute</h3>
+              <p class="timeline__role">Full Stack Web Development Bootcamp</p>
+              <p class="timeline__desc">Intensive professional training program</p>
+              <ul class="timeline__courses">
+                <li>HTML, CSS, JavaScript</li>
+                <li>Node.js & Express</li>
+                <li>Angular Framework</li>
+                <li>REST APIs & MongoDB</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content card-glass">
+              <span class="timeline__year">2023</span>
+              <h3 class="timeline__title">Online Learning Platform</h3>
+              <p class="timeline__role">Advanced UI/UX Design Certificate</p>
+              <p class="timeline__desc">Design systems and user-centered design</p>
+              <ul class="timeline__courses">
+                <li>Figma & Prototyping</li>
+                <li>Design Principles</li>
+                <li>Accessibility Standards</li>
+              </ul>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__subtitle">Career Path</span>
+          <h2 class="section__title">Experience</h2>
+        </header>
+
+        <div class="timeline timeline--experience">
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content card-glass">
+              <span class="timeline__year">2023 - Present</span>
+              <h3 class="timeline__title">Frontend Developer Trainee</h3>
+              <p class="timeline__role">Self Learning & Freelance Projects</p>
+              <ul class="timeline__list">
+                <li>Built responsive portfolio and web applications using HTML, CSS, and JavaScript</li>
+                <li>Worked on improving UI/UX and website performance</li>
+                <li>Developed interactive components and animations</li>
+                <li>Practiced clean code structure and responsive layouts</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content card-glass">
+              <span class="timeline__year">2021 - 2023</span>
+              <h3 class="timeline__title">Electronics & Arduino Team Lead</h3>
+              <!-- <p class="timeline__role">Digital Craft Agency</p> -->
+              <ul class="timeline__list">
+                <li>Led Arduino and electronics training sessions</li>
+                <li>Helped students understand embedded systems concepts</li>
+                <li>Worked on robotics and control-related projects</li>
+                <li>Managed teamwork and technical tasks</li>
+              </ul>
+            </div>
+          </article>
+          <!-- <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content card-glass">
+              <span class="timeline__year">2019 - 2021</span>
+              <h3 class="timeline__title">Junior Web Developer</h3>
+              <p class="timeline__role">StartUp Hub Co.</p>
+              <ul class="timeline__list">
+                <li>Developed landing pages and marketing websites</li>
+                <li>Implemented responsive designs from Figma mockups</li>
+                <li>Fixed bugs and improved cross-browser compatibility</li>
+                <li>Participated in agile sprints and daily standups</li>
+              </ul>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__subtitle">What I Know</span>
+          <h2 class="section__title">Skills</h2>
+        </header>
+
+        <div class="skills__grid">
+          <div class="skills__category reveal">
+            <h3 class="skills__category-title">
+              <i class="fas fa-palette"></i> Frontend
+            </h3>
+            <div class="skills__list">
+              <article class="skill-card" data-skill="95">
+                <div class="skill-card__header">
+                  <span class="skill-card__name"><i class="fab fa-html5"></i> HTML</span>
+                  <span class="skill-card__percent">95%</span>
+                </div>
+                <div class="skill-card__bar"><span class="skill-card__progress"></span></div>
+              </article>
+              <article class="skill-card" data-skill="90">
+                <div class="skill-card__header">
+                  <span class="skill-card__name"><i class="fab fa-css3-alt"></i> CSS</span>
+                  <span class="skill-card__percent">90%</span>
+                </div>
+                <div class="skill-card__bar"><span class="skill-card__progress"></span></div>
+              </article>
+              <article class="skill-card" data-skill="88">
+                <div class="skill-card__header">
+                  <span class="skill-card__name"><i class="fab fa-js"></i> JavaScript</span>
+                  <span class="skill-card__percent">88%</span>
+                </div>
+                <div class="skill-card__bar"><span class="skill-card__progress"></span></div>
+              </article>
+              <article class="skill-card" data-skill="82">
+                <div class="skill-card__header">
+                  <span class="skill-card__name"><i class="fab fa-angular"></i> Angular</span>
+                  <span class="skill-card__percent">82%</span>
+                </div>
+                <div class="skill-card__bar"><span class="skill-card__progress"></span></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="skills__category reveal reveal--delay">
+            <h3 class="skills__category-title">
+              <i class="fas fa-server"></i> Backend
+            </h3>
+            <div class="skills__list">
+              <article class="skill-card" data-skill="85">
+                <div class="skill-card__header">
+                  <span class="skill-card__name"><i class="fab fa-node-js"></i> Node.js</span>
+                  <span class="skill-card__percent">85%</span>
+                </div>
+                <div class="skill-card__bar"><span class="skill-card__progress"></span></div>
+              </article>
+            </div>
+            <div class="skills__extras">
+              <div class="skill-icon-card">
+                <i class="fas fa-database"></i>
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-icon-card">
+                <i class="fas fa-code-branch"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-icon-card">
+                <i class="fas fa-cloud"></i>
+                <span>Arduino</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__subtitle">My Work</span>
+          <h2 class="section__title">Projects</h2>
+        </header>
+
+        <div class="projects__grid">
+          <article class="project-card reveal">
+            <div class="project-card__image">
+              <!-- PROJECT IMAGE HERE -->
+              <div class="image-placeholder">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="project-card__overlay">
+                <a href="#" class="project-card__link" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-card__link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">E-Commerce Platform</h3>
+              <p class="project-card__desc">A full-featured online store with cart, checkout, and admin dashboard.</p>
+              <div class="project-card__tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
+                <a href="#" class="btn btn--sm btn--outline"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__image">
+              <!-- PROJECT IMAGE HERE -->
+              <div class="image-placeholder">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <div class="project-card__overlay">
+                <a href="#" class="project-card__link" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-card__link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Task Management App</h3>
+              <p class="project-card__desc">Collaborative project management tool with real-time updates.</p>
+              <div class="project-card__tech">
+                <span>Angular</span><span>CSS</span><span>Node.js</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
+                <a href="#" class="btn btn--sm btn--outline"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__image">
+              <!-- PROJECT IMAGE HERE -->
+              <div class="image-placeholder">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <div class="project-card__overlay">
+                <a href="#" class="project-card__link" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-card__link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Weather Dashboard</h3>
+              <p class="project-card__desc">Beautiful weather app with forecasts, maps, and location search.</p>
+              <div class="project-card__tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
+                <a href="#" class="btn btn--sm btn--outline"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__image">
+              <!-- PROJECT IMAGE HERE -->
+              <div class="image-placeholder">
+                <i class="fas fa-blog"></i>
+              </div>
+              <div class="project-card__overlay">
+                <a href="#" class="project-card__link" aria-label="Live demo"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-card__link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Personal Blog CMS</h3>
+              <p class="project-card__desc">Content management system for bloggers with markdown support.</p>
+              <div class="project-card__tech">
+                <span>Node.js</span><span>Angular</span><span>MongoDB</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="#" class="btn btn--sm btn--primary">Live Demo</a>
+                <a href="#" class="btn btn--sm btn--outline"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback section" id="feedback">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__subtitle">Testimonials</span>
+          <h2 class="section__title">Client Feedback</h2>
+        </header>
+
+        <div class="feedback__slider reveal">
+          <div class="feedback__track" id="feedback-track">
+            <article class="feedback-card feedback-card--active">
+              <div class="feedback-card__stars" aria-label="5 out of 5 stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <blockquote class="feedback-card__quote">
+                "Maged is highly dedicated and always focuses on improving both the technical and visual quality of his projects."
+              </blockquote>
+              <div class="feedback-card__author">
+                <div class="feedback-card__avatar image-placeholder image-placeholder--round">
+                  <!-- CLIENT IMAGE HERE -->
+                  <i class="fas fa-user"></i>
+                </div>
+                <div>
+                  <h4 class="feedback-card__name">Sarah Mitchell</h4>
+                  <p class="feedback-card__role">CEO, TechStart Inc.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="feedback-card">
+              <div class="feedback-card__stars" aria-label="5 out of 5 stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <blockquote class="feedback-card__quote">
+                "Very cooperative team member with strong problem-solving skills and great attention to detail."
+              </blockquote>
+              <div class="feedback-card__author">
+                <div class="feedback-card__avatar image-placeholder image-placeholder--round">
+                  <!-- CLIENT IMAGE HERE -->
+                  <i class="fas fa-user"></i>
+                </div>
+                <div>
+                  <h4 class="feedback-card__name">Michael Chen</h4>
+                  <p class="feedback-card__role">Product Manager, InnovateLab</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="feedback-card">
+              <div class="feedback-card__stars" aria-label="5 out of 5 stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <blockquote class="feedback-card__quote">
+                "His projects demonstrate creativity, clean implementation, and continuous learning."
+              </blockquote>
+              <div class="feedback-card__author">
+                <div class="feedback-card__avatar image-placeholder image-placeholder--round">
+                  <!-- CLIENT IMAGE HERE -->
+                  <i class="fas fa-user"></i>
+                </div>
+                <div>
+                  <h4 class="feedback-card__name">Emily Rodriguez</h4>
+                  <p class="feedback-card__role">Founder, StyleShop</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="feedback__controls">
+            <button class="feedback__btn" id="feedback-prev" aria-label="Previous testimonial">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="feedback__dots" id="feedback-dots"></div>
+            <button class="feedback__btn" id="feedback-next" aria-label="Next testimonial">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__subtitle">What I Offer</span>
+          <h2 class="section__title">Services</h2>
+        </header>
+
+        <div class="services__grid">
+          <article class="service-card reveal">
+            <div class="service-card__border"></div>
+            <div class="service-card__icon"><i class="fas fa-laptop-code"></i></div>
+            <h3 class="service-card__title">Web Development</h3>
+            <p class="service-card__desc">Building responsive and modern websites with clean code and optimized performance.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__border"></div>
+            <div class="service-card__icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3 class="service-card__title">App Development</h3>
+            <p class="service-card__desc">Creating interactive web applications with dynamic and user-friendly interfaces.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__border"></div>
+            <div class="service-card__icon"><i class="fas fa-paint-brush"></i></div>
+            <h3 class="service-card__title">UI/UX Design</h3>
+            <p class="service-card__desc">Designing modern and intuitive user experiences with attention to usability and aesthetics.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card__border"></div>
+            <div class="service-card__icon"><i class="fas fa-search"></i></div>
+            <h3 class="service-card__title">SEO</h3>
+            <p class="service-card__desc">Improving website structure and performance for better visibility on search engines.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__subtitle">Get In Touch</span>
+          <h2 class="section__title">Contact Me</h2>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p class="contact__intro">Have a project in mind? Let's work together to bring your ideas to life.</p>
+            <ul class="contact__list">
+              <li>
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span>Email</span>
+                  <a href="mailto:john.doe@email.com">magedabdalaziz167@email.com</a>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span>Phone</span>
+                  <a href="tel:+1234567890">+20 127 484 7674</a>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <span>Location</span>
+                  <p>Sharqia, Egypt</p>
+                </div>
+              </li>
+            </ul>
+            <div class="contact__social">
+              <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <form class="contact__form reveal reveal--delay" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name">
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+              <span class="form-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+              <span class="form-error" id="subject-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="form-success" id="form-success" hidden>Message sent successfully! I'll get back to you soon.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">JD</a>
+        <p class="footer__tagline">Passionate about creating modern and interactive digital experiences.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <h4>Follow Me</h4>
+        <div class="footer__icons">
+          <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Maged Abdelaziz. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
